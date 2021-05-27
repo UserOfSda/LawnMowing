@@ -23,9 +23,9 @@ public class SubMenu {
     }
 
     private int menuOptions(Scanner input) {
-        System.out.println("\n/***************************************************/");
+        System.out.println("\n***********************");
         System.out.println("Select the option menu: ");
-        System.out.println("-------------------------\n");
+        System.out.println("***********************\n");
         System.out.println();
         System.out.println("1: List all customers");
         System.out.println("2: ");
