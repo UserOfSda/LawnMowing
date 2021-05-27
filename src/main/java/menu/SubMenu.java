@@ -15,11 +15,11 @@ public class SubMenu {
     private RepositoryWorkschedule repositoryWorkschedule;
 
     public SubMenu() {
-        this.repositoryCustomers = repositoryCustomers;
-        this.repositoryLawnMowers = repositoryLawnMowers;
-        this.repositoryLawnMowingEquipment = repositoryLawnMowingEquipment;
-        this.repositoryPricing = repositoryPricing;
-        this.repositoryWorkschedule = repositoryWorkschedule;
+        this.repositoryCustomers = new RepositoryCustomers();
+        this.repositoryLawnMowers = new RepositoryLawnMowers();
+        this.repositoryLawnMowingEquipment = new RepositoryLawnMowingEquipment();
+        this.repositoryPricing = new RepositoryPricing();
+        this.repositoryWorkschedule = new RepositoryWorkschedule();
     }
 
     private int menuOptions(Scanner input) {
@@ -40,6 +40,7 @@ public class SubMenu {
 
         return input.nextInt();
     }
+
     public void menuChoice(Scanner input) {
 
         int userChoice;
@@ -63,7 +64,8 @@ public class SubMenu {
                     break;
                 case 8:
                     break;
-                case 9: ;
+                case 9:
+                    ;
                     break;
                 case 10:
                     DBUtil.shutdown();
@@ -79,12 +81,10 @@ public class SubMenu {
     }
 
     private void listAllCustomers(Scanner input) {
-        List<Customers> listOfCustomers =repositoryCustomers.listAllCustomers();
+        List<Customers> listOfCustomers = repositoryCustomers.listAllCustomers();
         System.out.println("\nList of customers:");
         for (Customers customerslist : listOfCustomers) {
-            System.out.println(customerslist.getCustomerId() + customerslist.getCustomerName() + customerslist.getCustomerAddress() + customerslist.getCustomerPhoneNumber() + " Email: " + customerslist.getCustomerEmail()+ customerslist.getCustomerWorkingArea());
+            System.out.println(customerslist.getCustomerId() + customerslist.getCustomerName() + customerslist.getCustomerAddress() + customerslist.getCustomerPhoneNumber() + " Email: " + customerslist.getCustomerEmail() + customerslist.getCustomerWorkingArea());
         }
     }
-
-
 }
