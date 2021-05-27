@@ -5,7 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 
 public class DBUtil {
-    private static final String PERSISTENCE_UNIT_NAME = "LawnMowing_MYSQL";
+    private static final String PERSISTENCE_UNIT_NAME = "PERSISTENCE_MYSQL";
     private static EntityManagerFactory factory;
 
     public static EntityManager getEntityManager() {
