@@ -84,7 +84,7 @@ public class SubMenu {
         List<Customers> listOfCustomers = repositoryCustomers.listAllCustomers();
         System.out.println("\nList of customers:");
         for (Customers customerslist : listOfCustomers) {
-            System.out.println(customerslist.getCustomerId() + customerslist.getCustomerName() + customerslist.getCustomerAddress() + customerslist.getCustomerPhoneNumber() + " Email: " + customerslist.getCustomerEmail() + customerslist.getCustomerWorkingArea());
+            System.out.println(customerslist.getCustomerId() + ". Name: " + customerslist.getCustomerName() + ". Phone number: " + customerslist.getCustomerPhoneNumber() + ". Address: " + customerslist.getCustomerAddress() + ". Email: " + customerslist.getCustomerEmail() + ". Working area: " + customerslist.getCustomerWorkingArea() + "m2.");
         }
     }
 }
