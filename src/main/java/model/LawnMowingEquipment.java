@@ -11,13 +11,11 @@ public class LawnMowingEquipment {
     @Column(name = "equipment_id")
     private int equipmentId;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "equipment_name")
     private String equipmentName;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "work_capacity")
     private int workCapacity;
 

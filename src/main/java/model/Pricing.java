@@ -11,8 +11,7 @@ public class Pricing {
     @Column(name = "price_id")
     private int priceId;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "description")
     private String description;
 

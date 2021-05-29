@@ -11,23 +11,19 @@ public class LawnMowers {
     @Column(name = "lawnmower_id")
     private int lawnMowerID;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "lawnmower_name")
     private String lawnmowerName;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "lawnmower_phoneNumber")
     private String lawnmowerPhoneNumber;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "lawnmower_email")
     private String lawnmowerEmail;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "lawnmower_salary")
     private int lawnmowerSalary;
 
