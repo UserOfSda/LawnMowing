@@ -10,28 +10,23 @@ public class Customers {
     @Column(name = "customer_id")
     private int customerId;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "customer_name")
     private String customerName;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "customer_address")
     private String customerAddress;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "customer_phoneNumber")
     private String customerPhoneNumber;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "customer_email")
     private String customerEmail;
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     @Column(name = "customer_workingArea")
     private int customerWorkingArea;
 
@@ -42,6 +37,9 @@ public class Customers {
         this.customerPhoneNumber = customerPhoneNumber;
         this.customerEmail = customerEmail;
         this.customerWorkingArea = customerWorkingArea;
+    }
+
+    public Customers() {
     }
 
     public int getCustomerId() {

@@ -48,7 +48,7 @@ public class SubMenu {
             userChoice = menuOptions(input);
             switch (userChoice) {
                 case 1:
-                    listAllCustomers(input);
+                    listAllCustomers();
                     break;
                 case 2:
                     break;
@@ -80,7 +80,7 @@ public class SubMenu {
         System.out.println("Menu Closed");
     }
 
-    private void listAllCustomers(Scanner input) {
+    private void listAllCustomers() {
         List<Customers> listOfCustomers = repositoryCustomers.listAllCustomers();
         System.out.println("\nList of customers:");
         for (Customers customerslist : listOfCustomers) {
