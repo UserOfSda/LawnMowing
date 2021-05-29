@@ -14,7 +14,7 @@ public class RepositoryCustomers {
     }
 
     public List<Customers> listAllCustomers() {
-        return em.createQuery("From Customers c order by c.customerName")
+        return em.createQuery("From Customers c order by c.customerId")
                 .getResultList();
 
     }
