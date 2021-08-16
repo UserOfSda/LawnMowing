@@ -22,6 +22,9 @@ public class Workschedule {
     public Workschedule(int workscheduleId) {
         this.workscheduleId = workscheduleId;
     }
+    public Workschedule(){
+
+    }
 
     public int getWorkscheduleId() {
         return workscheduleId;

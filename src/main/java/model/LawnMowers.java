@@ -34,6 +34,9 @@ public class LawnMowers {
         this.lawnmowerEmail = lawnmowerEmail;
         this.lawnmowerSalary = lawnmowerSalary;
     }
+    public LawnMowers(){
+
+    }
 
     public int getLawnMowerID() {
         return lawnMowerID;
