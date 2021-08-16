@@ -24,6 +24,9 @@ public class LawnMowingEquipment {
         this.equipmentName = equipmentName;
         this.workCapacity = workCapacity;
     }
+    public LawnMowingEquipment(){
+
+    }
 
     public int getEquipmentId() {
         return equipmentId;
@@ -33,11 +36,11 @@ public class LawnMowingEquipment {
         this.equipmentId = equipmentId;
     }
 
-    public String getEquipmenName() {
+    public String getEquipmentName() {
         return equipmentName;
     }
 
-    public void setEquipmenName(String equipmenName) {
+    public void setEquipmentName(String equipmenName) {
         this.equipmentName = equipmenName;
     }
 

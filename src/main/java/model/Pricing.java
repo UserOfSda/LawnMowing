@@ -27,6 +27,9 @@ public class Pricing {
         this.priceId = priceId;
         this.description = description;
     }
+    public Pricing(){
+
+    }
 
     public int getPriceId() {
         return priceId;
